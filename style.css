@@ -1,0 +1,197 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: #23023a; /* Purple background */
+  color: white;
+  font-weight: normal;
+}
+
+header {
+  padding: 1rem 5rem;
+  background-color: rgba(10, 1, 1, 0.7);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem 5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section#about {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+#about p {
+  font-size: 35px;
+  max-width: 100%;
+  width: 600px;
+  margin-top: 150px;
+  line-height: 1.8;
+}
+
+p span {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#goals h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+#goals ul li {
+  margin: 1rem 0rem;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: rgba(10, 1, 1, 0.7);
+  text-align: center;
+}
+
+span#time {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+span#day {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#contact h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact p {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact p a {
+  margin: 10px 0px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  section {
+    margin-bottom: 1.5rem;
+  }
+
+  section#about {
+    grid-template-columns: 1fr;
+  }
+
+  #about p {
+    font-size: 30px;
+    max-width: 500px;
+    margin-top: 50px;
+    line-height: 1.5;
+  }
+
+  p span {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  #goals h2 {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* padding: 2rem 1rem; */
+  }
+
+  span#time {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  span#day {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #about p {
+    font-size: 15px;
+    line-height: 1.1;
+    margin: 0px 25px 0px 0px;
+  }
+
+  p span {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #goals h2 {
+    font-size: 1.2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* padding: 2rem 1rem; */
+  }
+}

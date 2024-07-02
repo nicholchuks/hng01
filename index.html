@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholas Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 data-testid="slackDisplayName">Nichol</h1>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <img
+          src="img/profileimg.png"
+          class="profile-img"
+          alt="profile-picture"
+          data-testid="slackProfilePicture"
+        />
+        <p>
+          I'm a <span>Frontend Developer,</span> with a passion for creating
+          beautiful and responsive websites.
+        </p>
+      </section>
+      <section id="goals">
+        <h2>My Goals for the Next 2 Years:</h2>
+        <ul>
+          <li>Contribute to open-source projects</li>
+          <li>Become a mentor at HNG</li>
+          <li>Gain a deep understanding of web performance optimization</li>
+          <li>Become proficient in Nodejs</li>
+          <li>Attend and speak at frontend development conferences</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          <a href="chukwunicholas91@gmail.com" data-testid="slackEmail"
+            >chukwunicholas91@gmail.com</a
+          >
+          <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+          <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+          <a href="https://scrapeanyweb.site" : data-testid="scrapeanywebLink"
+            >Scrape Any Website</a
+          >
+        </p>
+      </section>
+       <p data-testid="currentTimeUTC">
+          Current Time in UTC: <span id="time"></span>
+        </p>
+        <p data-testid="currentDay">Current Day: <span id="day"></span></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
